@@ -1,0 +1,78 @@
+
+*{
+    margin:0px;
+}
+.main{
+    margin:0px;
+    background: linear-gradient(to top left, darkslateblue,rgb(39, 146, 189,.8),darkslateblue,rgb(39, 146, 189,.8),darkslateblue );
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.sz1{
+    font-size: 60px;
+    margin-bottom: 100px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+.sz2{
+    font-size: 25px;
+    height: 46px;
+    width:260px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    padding-top: 15px;
+}
+.b1{
+    background-color: whitesmoke;
+    color:black;
+}
+.b2{
+    background-color: darkslateblue;
+    color:greenyellow
+}
+.b1:hover{
+    cursor: pointer;
+    background: black;
+    color:whitesmoke;
+    box-shadow: 0px 5px white;
+    padding-left: 10px;
+}
+.b2:hover{
+    cursor:pointer;;
+    background: black;
+    color:whitesmoke;
+    box-shadow: 0px 5px white;
+    padding-left: 10px;
+}
+
+
+@media screen and (min-width:550px) and (max-width:750px)
+{
+    .sz1{
+        font-size:50px;
+    }
+    .sz2{
+        font-size: 18px;
+        height:40px;
+    }
+}
+@media screen and (max-width:550px)
+{
+    .sz1{
+        font-size:35px;
+    }
+    .sz2{
+        font-size: 15px;
+        height:32px;
+    }
+}@media screen and (max-height:360px)
+{
+    .sz2{
+        padding:0px;
+    }
+}
