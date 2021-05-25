@@ -1,5 +1,6 @@
 .main{
     background: linear-gradient(to top left, darkslateblue,rgb(39, 146, 189,.8),darkslateblue,rgb(39, 146, 189,.8),darkslateblue );
+	height:100vh;
 }
 .f1{
     margin-top:30px;

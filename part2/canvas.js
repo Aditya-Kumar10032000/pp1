@@ -1,11 +1,12 @@
 
-
 const cn = document.getElementById("canvas");
 const cntxt = cn.getContext("2d");
-
-cn.height =window.innerHeight-100;
-cn.width = window.innerWidth-300;
+const rect = cn.getBoundingClientRect();
+cn.height =rect.bottom-rect.top;
+cn.width = rect.right-rect.left;
 var pos = 0;
+
+
 
 function drawstart(e) {
     pos = 1;
@@ -20,11 +21,11 @@ function draw(e){
     cntxt.lineWidth = 5;
     cntxt.lineCap = 'round';
     cntxt.strokeStyle= 'red';
-    cntxt.lineTo(e.clientX, e.clientY);
-    console.log(e.clientX , e.clentY);
+    cntxt.lineTo(e.clientX - rect.left, e.clientY - rect.top);
+    console.log(e.clientX - rect.left , e.clientY - rect.top);
     cntxt.stroke();
     cntxt.beginPath();
-    cntxt.moveTo(e.clientX, e.clientY);
+    cntxt.moveTo(e.clientX - rect.left , e.clientY - rect.top);
     
 }
 
